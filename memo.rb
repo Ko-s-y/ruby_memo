@@ -4,7 +4,7 @@ def memo_editor()
   puts "1(新規でメモを作成する) 2(既存のメモに追加する) 3(既存のメモを参照する)"
   memo_type = gets.to_i
   current_filelist = []
-  Dir.foreach('.') do |item|  #同階層のファイル取得cuurent_filelestに
+  Dir.foreach('.') do |item|  #同階層のファイル取得cuurent_filelestへ
     next if item == '.' or item == '..'
     current_filelist.push(item)
   end
